@@ -73,21 +73,18 @@
         <div class="row center-xs">
           <div class="col-xs-11 portfolios-header">
             <h3>Portfolio</h3>
-            <a href="#" class="btn btn-outline btn-sm">Add Portfolio</a>
+            <a href="#" class="btn btn-outline btn-sm" id="edit-portfolio">Add Portfolio</a>
           </div>
         </div>
         <div class="row center-xs">
-          <div class="col-xs-11 portfolios">
-            <div class="item-wrapper">
+          <a class="col-xs-11 portfolios">
+            <div class="item-wrapper" id="show-portfolio">
               <img src="images/rectangle3.jpg">
               <div class="item-body">
                 <span>Logo design for a premier ranch in western U.S.</span>
               </div>
             </div>
           </div>
-        </div>
-        <div class="portfolios">
-            
         </div>
       </div>
     </section>
@@ -274,6 +271,31 @@
         </div>
         <div class="modal-footer">
           <a href="#" id="save-button-portfolio" class="btn btn-red">Save</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="portfolio-details">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="images/rectangle3.jpg">
+          <div class="portfolio-desc">
+            <div class="top-desc">
+              <div class="details">
+                <h2 class="title">Developing Gojek for Apple Watch</h2>
+                <span class="date-range">2017 January - 2018 January</span>
+              </div>
+              <div class="actions">
+                <a href="#" class="btn btn-outline btn-sm">Edit Portfolio</a>
+                <button class="btn btn-simple" id="close-portfolio">
+                  <i class="ion-android-close"></i>
+                </button>
+              </div>
+            </div>
+            <div class="bottom-desc">
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="link" href="https://www.teamcookies.id" target="_blank">https://www.teamcookies.id</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
