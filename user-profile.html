@@ -46,7 +46,7 @@
           <div class="row center-xs">
             <div class="col-xs-11 col-md-12">
               <img src="https://randomuser.me/api/portraits/men/51.jpg">
-              <a class="btn btn-outline btn-sm" href="#">Edit Profile</a>
+              <button class="btn btn-outline btn-sm" id="edit-profile">Edit Profile</button>
             </div>
           </div>
         </div>
@@ -91,5 +91,192 @@
         </div>
       </div>
     </section>
+    <div id="modal-profile" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Profile</h2>
+          <button class="btn btn-simple" id="close-modal">
+            <i class="ion-android-close"></i>
+          </button>          
+        </div>
+        <div class="modal-body">
+          <div class="profile-header">
+            <label for="file-cover" class="btn btn-circle btn-sm btn-red" id="edit-cover"><i class="ion-edit"></i></label>
+            <input type="file" accept="image/*" id="file-cover">
+            <div class="profile-img-container">
+              <img class="profile-img" src="https://randomuser.me/api/portraits/men/51.jpg">
+              <label for="file-avatar" class="btn btn-circle btn-sm btn-red"><i class="ion-edit"></i></label>
+              <input type="file" accept="image/*" id="file-avatar">
+            </div>
+          </div>
+          <div class="profile-form">
+            <form class="form-control">
+              <div class="row center-xs">
+                <div class="col-xs-12 col-md-6 input-label">
+                  <label>First Name</label>
+                  <input id="first-name" type="text" placeholder="Your first name">
+                </div>
+                <div class="col-xs-12 col-md-6 input-label">
+                  <label>Last Name</label>
+                  <input id="last-name" type="text" placeholder="Your last name">
+                </div>
+              </div>
+              <div class="row center-xs">
+                <div class="col-xs-12 input-label">
+                  <label>Current Position</label>
+                  <input id="position" type="text" placeholder="iOS Developer, NodeJS Developer, etc.">
+                </div>
+              </div>
+              <div class="row center-xs">
+                <div class="col-xs-12 input-label">
+                  <label>Location</label>
+                  <input id="position" type="text" placeholder="Jakarta">
+                </div>
+              </div>
+              <div class="row center-xs">
+                <div class="col-xs-12 input-label">
+                  <label>Summary</label>
+                  <textarea id="summary" type="text" placeholder="I am a developer who..."></textarea>
+                </div>
+              </div>
+              <div class="row center-xs">
+                <div class="col-xs-12 input-label">
+                  <label>Website</label>
+                  <input id="website" type="text" placeholder="https://kamikerjaremote.id">
+                </div>
+              </div>
+              <div class="row center-xs">
+                <div class="col-xs-12 input-label">
+                  <label>Skill Set</label>
+                  <div class="input-icon">
+                    <i class="ion-ios-search-strong"></i>
+                    <input type="text" placeholder="Skill (ex: iOS Developer)">
+                  </div>
+                </div>
+              </div>
+              <div class="row center-xs">
+                <div class="col-xs-12 start-xs">
+                  <ul class="skillsets">
+                    <li class="skillset">
+                      <span>UI Designer</span>
+                      <i class="ion-android-close"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" id="save-button" class="btn btn-red">Save</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-portfolio">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Portfolio</h2>
+          <button class="btn btn-simple" id="close-portfolio-modal">
+            <i class="ion-android-close"></i>
+          </button>          
+        </div>
+        <div class="modal-body">
+          <div class="portfolio-form">
+            <div class="portfolio-header">
+              <label class="portfolio-upload" for="upload-portfolio-img"><i class="ion-ios-camera-outline"></i><span>Upload Thumbnail</span></label>
+              <input type="file" accept="image/*" id="upload-portfolio-img">
+            </div>
+            <div class="row center-xs">
+              <div class="col-xs-12 input-label">
+                <label>Project Name</label>
+                <input id="project-name" type="text" placeholder="My awesome project">
+              </div>
+            </div>
+            <div class="row center-xs">
+              <div class="col-xs-12 col-md-6 input-label">
+                <label>Start Date</label>
+                <div class="dropdown">
+                  <select>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>March</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <select>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 input-label">
+                <label>End Date</label>
+                <div class="dropdown">
+                  <select>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>March</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                  </select>
+                </div>
+                <div class="dropdown">
+                  <select>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row center-xs">
+              <div class="col-xs-12 start-xs project-ongoing">
+                <input type="checkbox" id="project-ongoing">
+                <label for="project-ongoing">Project Ongoing</label>
+              </div>
+            </div>
+            <div class="row center-xs">
+              <div class="col-xs-12 input-label">
+                <label>Description</label>
+                <textarea id="description" type="text" placeholder="Tell some description of your project"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#" id="save-button-portfolio" class="btn btn-red">Save</a>
+        </div>
+      </div>
+    </div>
+    <script src="js/edit-profile-modal.js"></script>
   </body>
 </html>
