@@ -148,7 +148,9 @@ label + input[type=file] {
   .btn-block {
     width: 100%; }
     .btn-block-half {
-      width: 50%; }
+      width: 50%;
+      -webkit-appearance: button-bevel;
+}
   .btn-simple {
     background: transparent;
     border: none;
