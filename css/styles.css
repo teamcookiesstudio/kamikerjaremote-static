@@ -238,6 +238,7 @@ label + input[type=file] {
   justify-content: space-between;
   align-items: center;
   padding: 24px;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .modal-header > * {
@@ -247,7 +248,6 @@ label + input[type=file] {
 .modal-header .btn {
   color: #de3f52;
   font-size: 24px;
-  border-bottom: 1px solid #e7e7e7;
 }
 
 .modal-footer {
@@ -993,13 +993,13 @@ body#search {
   padding: 100px 1rem 1rem;
 }
 
-#modal-profile .skillsets {
+.skillsets {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#modal-profile .skillsets .skillset {
+.skillsets .skillset {
   display: inline-flex;
   align-items: baseline;
   justify-content: flex-start;
@@ -1008,11 +1008,11 @@ body#search {
   border-radius: 5px;
 }
 
-#modal-profile .skillsets .skillset span {
+.skillsets .skillset span {
   color: #838383;
 }
 
-#modal-profile .skillsets .skillset i {
+.skillsets .skillset i {
   color: #c9182c;
   margin-left: .5rem;
 }
@@ -1022,18 +1022,18 @@ body#search {
   display: none;
 }
 
-#modal-portfolio .portfolio-form {
+.portfolio-form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-#modal-portfolio .portfolio-header {
+.portfolio-header {
   height: 200px;
   background: transparent;
 }
 
-#modal-portfolio .portfolio-header .portfolio-upload {
+.portfolio-header .portfolio-upload {
   height: 135px;
   width: 135px;
   display: flex;
@@ -1047,26 +1047,26 @@ body#search {
   color: #838383;
   cursor: pointer;
 }
-#modal-portfolio .portfolio-header .portfolio-upload i {
+.portfolio-header .portfolio-upload i {
   font-size: 40px;
 }
-#modal-portfolio .portfolio-header .portfolio-upload span {
+.portfolio-header .portfolio-upload span {
   font-size: 14px;
 }
 
-#modal-portfolio .portfolio-form {
+.portfolio-form {
   padding: 0 1rem 1rem;
 }
 
-#modal-portfolio .portfolio-form > .row {
+.portfolio-form > .row {
   margin-bottom: 1rem;
 }
 
-#modal-portfolio .project-ongoing {
+.project-ongoing {
   cursor: pointer;
 }
 
-#modal-portfolio .project-ongoing label {
+.project-ongoing label {
   margin-left: .5rem;
   color: #838383;
 }
@@ -1148,6 +1148,173 @@ body#search {
   color: #838383;
   font-weight: 600;
   text-decoration: none;
+}
+
+/** ONBOARDING **/
+
+#onboarding .onboarding-header {
+  background: linear-gradient(to bottom, #ffffff, #f4f3f1);
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+
+#onboarding .onboarding-header .progression-container {
+  position: relative;
+  padding: 0;
+}
+
+#onboarding .onboarding-header h2 {
+  margin: 0 0 4px;
+}
+
+#onboarding .onboarding-header span {
+  color: #838383;
+}
+
+#onboarding .onboarding-body .form-header {
+  height: 200px;
+  background: #d8d8d8;
+}
+
+#onboarding .onboarding-body .form-header .container {
+  position: relative;
+}
+
+#onboarding .progression {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  transform: translateY(-50%);
+}
+
+#onboarding .progression .step-dot {
+  background: #bfbfbf;
+  border: 2px solid #f4f3f1;
+  height: 12px;
+  flex: 0 1 12px;
+  border-radius: 5rem;
+}
+
+#onboarding .progression .step-dot.active {
+  background: #de3f52;
+}
+
+#onboarding .progression .step-bar {
+  flex: 1 0 auto;
+  background: #e7e7e7;
+  height: 6px;
+  border-radius: 5rem;
+  margin: 0 4px;
+}
+
+#onboarding .progression .step-bar.active {
+  background: linear-gradient(to bottom, #c9182c, #de3f52);
+}
+
+#onboarding .elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#onboarding .upload-header,
+#onboarding .upload-avatar {
+  padding: 10px 8px;
+  border-radius: 5px;
+  border: 2px dashed #ffffff;
+  color: #838383;
+  text-decoration: none;
+}
+
+#onboarding .upload-cover {
+  display: flex;
+  align-items: center;
+}
+
+#onboarding .upload-cover i {
+  color: #bfbfbf;
+  font-size: 22px;
+  margin-right: .5rem;
+}
+
+#onboarding .upload-avatar {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin-top: 36px;
+  background: #d8d8d8;
+}
+
+#onboarding .upload-avatar .upload-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#onboarding .upload-avatar .upload-pic i {
+  font-size: 48px;
+  color: #bfbfbf;
+}
+
+#onboarding .form-body {
+  margin-top: 100px;
+}
+
+#onboarding .form-footer {
+  position: sticky;
+  bottom: 0;
+  background: linear-gradient(to bottom, #ffffff, #f4f3f1);
+  box-shadow: 0 -2px 25px 0 rgba(126, 126, 126, 0.2);
+}
+
+#onboarding .form-footer .container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+#onboarding.onboarding-2 .onboarding-body .form-header {
+  background: transparent;
+  height: auto;
+}
+
+#onboarding.onboarding-2 .onboarding-body .form-header .container {
+  display: flex;
+  padding: 26px 0 0;
+}
+
+#onboarding.onboarding-2 .elements .portfolio-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 135px;
+  width: 135px;
+  background: #f9f9f9;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+}
+
+#onboarding.onboarding-2 .elements .portfolio-upload i {
+  font-size: 40px;
+  color: #bfbfbf;
+}
+
+#onboarding.onboarding-2 .elements .portfolio-upload span {
+  font-size: 14px;
+  color: #838383;
+}
+
+#onboarding.onboarding-2 .form-body {
+  margin-top: 0;
 }
 
 /** MEDIA QUERIES **/

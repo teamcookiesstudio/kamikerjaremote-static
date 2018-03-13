@@ -20,40 +20,48 @@ var closePortfolio = document.getElementById("close-portfolio-modal")
 var closeDetPort = document.getElementById("close-portfolio");
 
 // When the user clicks on the button, open the modal 
-btnEditProfile.onclick = function () {
+btnEditProfile.onclick = function (e) {
+  e.stopPropagation();
     modalProfile.style.display = "block";
   body.style.overflow = "hidden";
 }
-btnEditPortfolio.onclick = function () {
+btnEditPortfolio.onclick = function (e) {
+  e.stopPropagation();
     modalPortfolio.style.display = "block";
   body.style.overflow = "hidden";
 }
-btnShowPortfolio.onclick = function () {
+btnShowPortfolio.onclick = function (e) {
+  e.stopPropagation();
   modalDetPort.style.display = "block";
   body.style.overflow = "hidden";
 }
 
 // When the user clicks on <span> (x), close the modal
-saveProfile.onclick = function() {
+saveProfile.onclick = function(e) {
+  e.stopPropagation();
     modalProfile.style.display = "none";
   body.style.overflow = "auto";
 }
 
-savePortfolio.onclick = function() {
+savePortfolio.onclick = function(e) {
+  e.stopPropagation();
     modalPortfolio.style.display = "none";
   body.style.overflow = "auto";
 }
 
-closeProfile.onclick = function () {
+closeProfile.onclick = function (e) {
+  e.stopPropagation();
   modalProfile.style.display = "none";
   body.style.overflow = "auto";
 }
 
-closePortfolio.onclick = function () {
+closePortfolio.onclick = function (e) {
+  e.stopPropagation();
   modalPortfolio.style.display = "none";
   body.style.overflow = "auto";
 }
-closeDetPort.onclick = function () {
+closeDetPort.onclick = function (e) {
+  e.stopPropagation();
   modalDetPort.style.display = "none";
   body.style.overflow = "auto";
 }

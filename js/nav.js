@@ -12,5 +12,6 @@ btnUser.onclick = function (e) {
 }
 
 window.onclick = function () {
+  console.log("a");
   userActions.style.display = "none";
 }
