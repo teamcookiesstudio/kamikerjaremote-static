@@ -3,6 +3,7 @@
 var modalProfile = document.getElementById("modal-profile");
 var modalPortfolio = document.getElementById("modal-portfolio");
 var modalDetPort = document.getElementById("portfolio-details");
+var modalWarning = document.getElementById("warning-message");
 
 var body = document.getElementsByTagName("BODY")[0];
 
@@ -12,12 +13,12 @@ var btnEditPortfolio = document.getElementById("edit-portfolio");
 var btnShowPortfolio = document.getElementById("show-portfolio")
 
 // Get the <span> element that closes the modal
-var saveProfile = document.getElementById("save-button");
 var closeProfile = document.getElementById("close-modal");
 
 var savePortfolio = document.getElementById("save-button-portfolio");
-var closePortfolio = document.getElementById("close-portfolio-modal")
+var closePortfolio = document.getElementById("close-portfolio-modal");
 var closeDetPort = document.getElementById("close-portfolio");
+var closeWarning = document.getElementById("close-warning");
 
 // When the user clicks on the button, open the modal 
 btnEditProfile.onclick = function (e) {
@@ -37,12 +38,6 @@ btnShowPortfolio.onclick = function (e) {
 }
 
 // When the user clicks on <span> (x), close the modal
-saveProfile.onclick = function(e) {
-  e.stopPropagation();
-    modalProfile.style.display = "none";
-  body.style.overflow = "auto";
-}
-
 savePortfolio.onclick = function(e) {
   e.stopPropagation();
     modalPortfolio.style.display = "none";
@@ -63,6 +58,11 @@ closePortfolio.onclick = function (e) {
 closeDetPort.onclick = function (e) {
   e.stopPropagation();
   modalDetPort.style.display = "none";
+  body.style.overflow = "auto";
+}
+closeWarning.onclick = function (e) {
+  e.stopPropagation();
+  modalWarning.style.display = "none";
   body.style.overflow = "auto";
 }
 

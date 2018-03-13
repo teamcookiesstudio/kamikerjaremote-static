@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>KamiKerjaRemote - Indonesian Biggest Remote Worker Community</title>
 
     <link href="css/flexboxgrid.css" rel="stylesheet">
     <link href="css/ionicons.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body id="search">
+  <body id="onboarding" class="onboarding-3">
     <nav class="colored">
       <div class="top-bar">
         <a class="logo" href="index.html">Logo</a>
@@ -42,55 +42,27 @@
       </div>
     </nav>
     <section>
-      <div class="search-wrapper">
+      <div class="onboarding-header">
         <div class="container">
-          <div class="row center-xs start-md">
-            <div class="col-xs-12 col-md-8">
-              <div class="input-control search-box">
-                <label class="icon-search" for="search"></label>
-                <input type="text" id="search" placeholder="Cari Freelancer Anda di sini">
-                <a class="btn btn-primary" href="search.html">Cari</a>
-              </div>
-            </div>
+          <h2>You’re Ready to go!</h2>
+        </div>
+        <div class="container progression-container">
+          <div class="progression">
+            <div class="step-dot active"></div>
+            <div class="step-bar active"></div>
+            <div class="step-dot active"></div>
+            <div class="step-bar active"></div>
+            <div class="step-dot active"></div>
           </div>
         </div>
       </div>
-      <div class="search-result">
+      <div class="onboarding-body">
         <div class="container">
-          <div class="row center-xs start-md">
-            <div class="col-xs-11 col-md-8 center-xs start-md">
-              <span class="result-number">Showing 20 results</span>
-              <div class="search-results">
-                <a class="no-decoration" href="user-profile.html">
-                    <div class="item-wrapper" routerLink="/user">
-                      <img src="https://randomuser.me/api/portraits/men/51.jpg" class="user-img">
-                      <div class="item-details start-xs">
-                        <strong class="name">Rahmat Lyons</strong>
-                        <span class="position">Jr. UI Designer</span>
-                        <span class="city">Jakarta</span>
-                      </div>
-                    </div>
-                  </a>
-              </div>
-              <div class="pagination center-xs start-md">
-                <div class="arrows">
-                  <i class="ion-ios-arrow-back"></i>
-                </div>
-                <ul class="pages">
-                  <li class="active">1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>4</li>
-                  <li>5</li>
-                </ul>
-                <div class="arrows">
-                  <i class="ion-ios-arrow-forward"></i>
-                </div>
-              </div>
-            </div>
-          </div>
+          <span>Congratulation, your profile are ready! <br>Take a look at yours!</span>
+          <a href="#" class="btn btn-primary">Go to your profile</a>
         </div>
       </div>
     </section>
+    <script src="js/nav.js"></script>
   </body>
 </html>
