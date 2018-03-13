@@ -585,6 +585,10 @@ nav .logged-user .user-actions li i {
       text-decoration: none; }
 #login .login-form {
   margin-top: 32px; }
+#login .login-form p {
+  text-align: left;
+  color: #404040;
+}
   .login-form .btn.btn-primary {
     margin-top: 2rem; }
 #login .login-preferences {
