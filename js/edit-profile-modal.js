@@ -58,14 +58,6 @@ closeDetPort.onclick = function () {
   body.style.overflow = "auto";
 }
 
-var btnUser = document.getElementById("user-action");
-var userActions = document.getElementById("actions");
-var clickCounter = 0;
-
-btnUser.onclick = function () {
-  userActions.style.display = "flex";
-}
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modalProfile) {
@@ -80,14 +72,4 @@ window.onclick = function(event) {
     modalDetPort.style.display = "none";
     body.style.overflow = "auto";
   }
-  var style = userActions.style.display;
-    if (userActions.contains(event.target)) {
-    } else {
-      if (clickCounter < 1) {
-        clickCounter++;
-      } else {
-        userActions.style.display = "none";
-        clickCounter = 0;
-      }
-    }
 }
