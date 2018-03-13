@@ -352,7 +352,8 @@ nav .logged-user .user-actions ul {
   margin: 0;
 }
 
-nav .logged-user .user-actions li {
+nav .logged-user .user-actions li,
+nav .logged-user .user-actions li a {
   padding: .5rem .25rem;
   color: #838383;
   cursor: pointer;
