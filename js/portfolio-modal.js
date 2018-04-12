@@ -1,11 +1,11 @@
 $('#project-ongoing').click(() => {
   var isOngoing = $('#project-ongoing').prop('checked');
   if (isOngoing) {
-    $('#end-month').addClass('disabled').attr('disabled', true);
-    $('#end-year').addClass('disabled').attr('disabled', true);
+    $('#end-date-month').addClass('disabled').attr('disabled', true);
+    $('#end-date-year').addClass('disabled').attr('disabled', true);
   } else {
-    $('#end-month').removeClass('disabled').attr('disabled', false);
-    $('#end-year').removeClass('disabled').attr('disabled', false);
+    $('#end-date-month').removeClass('disabled').attr('disabled', false);
+    $('#end-date-year').removeClass('disabled').attr('disabled', false);
   }
 });
 const STARTING_YEAR = 1980;
@@ -17,10 +17,10 @@ var startYears = [];
 var startMonths = [];
 var endYears = [];
 var endMonths = [];
-var $startYearOpt = $('#start-year');
-var $startMonthOpt = $('#start-month');
-var $endYearOpt = $('#end-year');
-var $endMonthOpt = $('#end-month');
+var $startYearOpt = $('#start-date-year');
+var $startMonthOpt = $('#start-date-month');
+var $endYearOpt = $('#end-date-year');
+var $endMonthOpt = $('#end-date-month');
 
 function initYears () {
   var years = [];
@@ -28,7 +28,7 @@ function initYears () {
     years.push({year: y});
   }
   startYears = years;
-  endYears = years;
+  changeYears($endYearOpt, years[years.length-1].year, years[years.length-1].year);
 }
 function changeYears (c, s, e) {
   var years = [];
