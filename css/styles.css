@@ -913,7 +913,10 @@ body#search {
     color: #838383;
     text-decoration: none; }
   #profile .user-info .tags {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
     #profile .user-info .tags .tag {
       font-size: 18px;
       color: #838383;
@@ -921,7 +924,7 @@ body#search {
       border: 1px solid #e7e7e7;
       border-radius: 3px;
       padding: 4px 8px;
-      margin: 0 .5rem; }
+      margin: .25rem .5rem; }
 
 #profile .portfolio-container {
   padding-bottom: 10rem;
