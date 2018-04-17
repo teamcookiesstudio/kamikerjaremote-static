@@ -1097,12 +1097,13 @@ body#search {
 #portfolio-details .modal-body img {
   height: 320px;
   width: 320px;
+  flex: 0 0 320px;
   object-fit: cover;
   object-position: center;
-  flex: 1 0 320px;
 }
 
 #portfolio-details .portfolio-desc {
+  flex: 1 1 auto;
   margin-left: 32px;
   display: flex;
   flex-direction: column;
@@ -1118,7 +1119,7 @@ body#search {
 }
 
 #portfolio-details .top-desc .details {
-  flex: 1 1 100%;
+  flex: 1 0 auto;
 }
 
 #portfolio-details .top-desc .details .title {
@@ -1132,7 +1133,7 @@ body#search {
 }
 
 #portfolio-details .top-desc .actions {
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   display: flex;
   justify-content: flex-end;
 }
